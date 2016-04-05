@@ -48,7 +48,7 @@ public class YahooWeatherProvider implements WeatherProvider {
     private static final String TAG = "YahooWeatherProvider";
 
     private static final String URL_WEATHER =
-            "https://weather.yahooapis.com/forecastrss?w=%s&u=%s";
+            "http://xml.weather.yahoo.com/forecastrss?w=%s&u=%s";
     private static final String URL_LOCATION =
             "https://query.yahooapis.com/v1/public/yql?format=json&q=" +
             Uri.encode("select woeid, postal, admin1, admin2, admin3, " +
